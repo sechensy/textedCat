@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ez7-2o-xYY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="Pp4-DM-Gtz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Welcome" id="9Y0-Hj-NLQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xhe-lB-6SP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nH0-S6-Myc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-592"/>
+        </scene>
+        <!--Cat-->
+        <scene sceneID="pdE-jy-Xc8">
+            <objects>
+                <navigationController id="bUH-lw-GBU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cat" image="cat.circle" catalog="system" id="cbZ-fn-EPU">
+                        <imageReference key="selectedImage" image="cat.circle.fill" catalog="system" renderingMode="template"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fk3-hY-CQV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Y0-Hj-NLQ" kind="relationship" relationship="rootViewController" id="ASR-0b-gY9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P04-Z9-RTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-825" y="-592"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NoG-Eo-lQR">
+            <objects>
+                <tabBarController id="ez7-2o-xYY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5xe-IZ-h06">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemIndigoColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bUH-lw-GBU" kind="relationship" relationship="viewControllers" id="Shn-3v-jSm"/>
+                        <segue destination="O0H-BY-IY5" kind="relationship" relationship="viewControllers" id="rma-od-Vjs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iz1-gJ-dYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2024" y="-239"/>
+        </scene>
+        <!--TextedCat-->
+        <scene sceneID="3R7-is-wff">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TextedCat" id="hkT-Ja-kmh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pFZ-m2-7uX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wCB-RB-FiS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-421" y="583"/>
+        </scene>
+        <!--textedCat-->
+        <scene sceneID="Iqx-Ad-14r">
+            <objects>
+                <navigationController id="O0H-BY-IY5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="textedCat" image="cat.fill" catalog="system" selectedImage="cat.fill" id="QGS-75-hUT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ep2-aK-CNx">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hkT-Ja-kmh" kind="relationship" relationship="rootViewController" id="l3z-RY-NJH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbG-N9-zvl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.circle" catalog="system" width="128" height="123"/>
+        <image name="cat.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="cat.fill" catalog="system" width="128" height="102"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
